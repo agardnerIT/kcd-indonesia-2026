@@ -1,0 +1,5 @@
+INFO starting up
+DEBUG loaded 3 plugins
+INFO cache hit
+INFO payment successful
+DEBUG cache miss key=user:42

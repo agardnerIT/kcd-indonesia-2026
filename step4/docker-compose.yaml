@@ -1,0 +1,5 @@
+services:
+  agent:
+    build: agent
+    volumes:
+      - ./logs:/var/log/demo   # the log file the collector tails
