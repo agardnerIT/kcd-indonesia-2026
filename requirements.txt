@@ -2,4 +2,3 @@ fastapi==0.143.0
 uvicorn==0.54.0
 websockets==17.2  # WebSocket support for uvicorn (step 4)
 protobuf==7.36.2
-grpcio-tools==1.84.0  # only needed to regenerate the protobuf code
