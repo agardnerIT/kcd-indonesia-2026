@@ -1,6 +1,6 @@
 #!/bin/sh
 # Start this step: N plain collectors ("agents") in Docker, plus the server in this terminal.
-# Usage: ./start.sh [number-of-collectors]    (default 1)
+# Usage: ./start.sh [number-of-collectors]    (default 3)
 # Ctrl-C stops everything.
 cd "$(dirname "$0")" || exit 1
 ROOT=$(cd .. && pwd)
@@ -13,7 +13,7 @@ else VENV=$ROOT/.venv; [ -x "$VENV/bin/python" ] || python3 -m venv "$VENV"; fi
 
 ./stop.sh > /dev/null 2>&1   # start from a clean slate
 
-for i in $(seq 1 "${1:-1}"); do
+for i in $(seq 1 "${1:-3}"); do
   docker run -d --rm --name "kcd-agent-$i" \
     -v "$PWD/collector-config.yaml:/etc/otelcol-contrib/config.yaml" \
     otel/opentelemetry-collector-contrib:0.162.0 > /dev/null

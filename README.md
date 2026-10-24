@@ -11,7 +11,7 @@ Google Slides: https://dt-url.net/kcd-indonesia-2026
 
 This repository is a companion code repo to the KCD Indonesia 2026 talk. In it, we will walk through building an OpAMP server.
 
-The server will be implemented in Python and will be as bare-bones as possible - we're illustrating concepts not designing a production ready
+The server will be implemented in Python and will be as bare-bones as possible - we're illustrating concepts not designing a production ready system.
 
 We will use the OpenTelemtry contrib collector (running in docker) as a client.
 

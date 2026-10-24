@@ -1,5 +1,4 @@
-INFO starting up
+DEBUG starting up
 DEBUG loaded 3 plugins
-INFO cache hit
-INFO payment successful
+INFO GET request 200ms 200 OK
 DEBUG cache miss key=user:42
