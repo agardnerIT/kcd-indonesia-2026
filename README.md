@@ -13,7 +13,7 @@ This repository is a companion code repo to the KCD Indonesia 2026 talk. In it, 
 
 The server will be implemented in Python and will be as bare-bones as possible - we're illustrating concepts not designing a production ready system.
 
-We will use the OpenTelemtry contrib collector (running in docker) as a client.
+We will use the OpenTelemetry contrib collector (running in docker) as a client.
 
 As part of the demo, we should be able to connect 2 or 3 collectors. We call each collector an "agent". We acknowledge that any other software capable of "speaking OpAMP" could be a client, but we're focussed on OTel Collectors.
 
